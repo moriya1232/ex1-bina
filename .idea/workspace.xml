@@ -49,29 +49,41 @@
       <option name="project" value="LOCAL" />
       <updated>1604799871109</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="graph factory">
+      <created>1604801301680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604801301680</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="graph and nodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="graph and nodes" />
+    <MESSAGE value="graph factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="graph factory" />
   </component>
   <component name="WindowStateProjectService">
     <state x="162" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604799765089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="162" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604799765089" />
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1604799870972">
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1604801301594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604799870972" />
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604801301594" />
     <state x="855" y="370" width="281" height="207" key="Github.ShareDialog" timestamp="1604791834792">
       <screen x="72" y="27" width="1848" height="887" />
     </state>
     <state x="855" y="370" width="281" height="207" key="Github.ShareDialog/72.27.1848.887@72.27.1848.887" timestamp="1604791834792" />
-    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1604799887084">
+    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1604801311792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604799887084" />
+    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604801311792" />
+    <state x="387" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1604872441533">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="387" y="321" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604872441533" />
   </component>
 </project>

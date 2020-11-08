@@ -1,7 +1,13 @@
 
+def main():
+    file = open("input.txt", r)
+    print(file.read())
+
+
+
 class graph_factory:
 
-    def __init__(self, file):
+    def create_graph(self, file):
         algo = ""
         row_start = 0
         col_start = 0
@@ -56,8 +62,6 @@ class graph:
         self.start = self.nodes[start_loc]
         self.goal = self.nodes[goal_loc]
         self.algorithm = algorithm
-
-
 
 
     def addNeighbors(self, node, size, nodes):
