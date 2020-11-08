@@ -1,20 +1,62 @@
 
+class graph_factory:
+
+    def __init__(self, file):
+        algo = ""
+        row_start = 0
+        col_start = 0
+        row_goal = 0
+        col_goal = 0
+        size = 0
+        costs = []
+        lines = file.readLines()
+        num_line = 0
+        for line in lines:
+            if num_line == 0:
+                algo = line
+            elif num_line == 1:
+                str_loc = line.split(",")
+                row_start = int(str_loc[0])
+                col_start = int(str_loc[1])
+            elif num_line == 2:
+                str_loc = line.split(",")
+                row_goal = int(str_loc[0])
+                col_goal = int(str_loc[1])
+            elif num_line == 3:
+                size = int(line)
+            else:
+                str_loc = line.split(",")
+                for l in str_loc:
+                    costs.append[int(l)]
+
+            num_line += 1
+        start = size * row_start + col_start
+        goal = size * row_goal + col_goal
+        return graph(start, goal, size, costs, algo)
+
+
+
+
 class graph:
 
-    def __init__(self, start, goal, size, costs):
+    def __init__(self, start_loc, goal_loc, size, costs, algorithm):
         col = 0
         row = 0
-        nodes = []
+        self.nodes = []
         while row < size:
            while col < size:
                location = row*size+col
                cost = costs[location]
-               nodes.append(node(location, cost))
+               self.nodes.append(node(location, cost))
                col+=1
            ++row
 
-        for n in nodes:
+        for n in self.nodes:
             self.addNeighbors(self, n, size, nodes)
+        self.start = self.nodes[start_loc]
+        self.goal = self.nodes[goal_loc]
+        self.algorithm = algorithm
+
 
 
 
