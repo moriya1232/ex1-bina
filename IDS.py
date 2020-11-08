@@ -1,14 +1,10 @@
 #moriya leopold
 
 
-
-
-
-def dfs(graph, node, depth):
-    #if depth<=0:
-
-    visited = []
+def dfs(graph, node, visited=[], path=[]):
     if node not in visited:
-        visited.append(node)
-        for n in node.neighberhood():
-            dfs(graph, n, --depth
+        print (node)
+        visited.add(node)
+        for neighbor in node.neighbors:
+            dfs(graph, neighbor, vidited, path.append(neighbor))
+    return path
