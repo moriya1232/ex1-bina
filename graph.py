@@ -1,17 +1,14 @@
-
-
 class TextCares(object):
 
     @staticmethod
     def remove_enters(lines):
-        counter=0
+        counter = 0
         for line in lines:
-            if line[-1]=='\n':
+            if line[-1] == '\n':
                 lines[counter] = line[:-1]
 
-            counter+=1
+            counter += 1
         return lines
-
 
 
 class GraphFactory(object):
@@ -48,10 +45,10 @@ class GraphFactory(object):
             num_line += 1
         start = size * row_start + col_start
         goal = size * row_goal + col_goal
-        return graph(start, goal, size, costs, algo)
+        return Graph(start, goal, size, costs, algo)
 
 
-class graph:
+class Graph:
     def __init__(self, start_loc, goal_loc, size, costs, algorithm):
         col = 0
         row = 0
@@ -64,15 +61,14 @@ class graph:
                 col += 1
             row += 1
             col = 0
-        print("im here")
         for n in self.nodes:
-            self.addNeighbors(n, size, self.nodes)
+            self.add_neighbors(n, size, self.nodes)
         self.start = self.nodes[start_loc]
         self.goal = self.nodes[goal_loc]
         self.algorithm = algorithm
 
     @staticmethod
-    def addNeighbors(node, size, nodes):
+    def add_neighbors(node, size, nodes):
         location = node.location
         up_n = location - size
         down_n = location + size
@@ -92,7 +88,7 @@ class graph:
         elif location % size == size - 1:
             for r in right:
                 source_neighbors.remove(r)
-        temp_neighbors= source_neighbors.copy()
+        temp_neighbors = source_neighbors.copy()
         for n in temp_neighbors:
             if n < 0 or n >= size * size:
                 source_neighbors.remove(n)
@@ -100,22 +96,26 @@ class graph:
         # check if up is -1
         if up_n in source_neighbors and nodes[up_n].cost == -1:
             for u in up:
-                source_neighbors.remove(u)
+                if u in source_neighbors:
+                    source_neighbors.remove(u)
         # check if down is -1
         if down_n in source_neighbors and nodes[down_n].cost == -1:
             for d in down:
-                source_neighbors.remove(d)
+                if d in source_neighbors:
+                    source_neighbors.remove(d)
         # check if left is -1
         if left_n in source_neighbors and nodes[left_n].cost == -1:
             for l in left:
-                source_neighbors.remove(l)
+                if l in source_neighbors:
+                    source_neighbors.remove(l)
         # check if right is -1
         if right_n in source_neighbors and nodes[right_n].cost == -1:
             for r in right:
-                source_neighbors.remove(r)
+                if r in source_neighbors:
+                    source_neighbors.remove(r)
         # create neighbors
         for n in source_neighbors:
-            node.addNeighbor(nodes[n])
+            node.add_neighbor(nodes[n])
 
 
 class Node:
@@ -124,16 +124,17 @@ class Node:
         self.cost = cost
         self.neighbors = []
 
-    def addNeighbor(self, node):
+    def add_neighbor(self, node):
         self.neighbors.append(node)
 
 
 def main():
-    file = open("input.txt", "r")
+    file = open("input2.txt", "r")
     graph = GraphFactory().create_graph(file)
 
     print(graph.start.location)
     print(graph.goal.location)
+
 
 
 if __name__ == "__main__":
