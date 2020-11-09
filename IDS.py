@@ -14,11 +14,11 @@ def ids(graph):
 
 
 def dfs(graph, depth = float('inf')):
-    visited = [graph.start]
-    path = [graph.start]
     if depth <= 0:
         return None
     for neighbor in graph.start.neighbors:
+        visited = [graph.start]
+        path = [graph.start]
         if neighbor not in path:
             path.append(neighbor)
             depth -= 1
