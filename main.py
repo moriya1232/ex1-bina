@@ -10,7 +10,7 @@ def main():
         for node in res:
             print(node.location)
     else:
-        print("No Solution")
+        print("no path")
 
 
 if __name__ == "__main__":

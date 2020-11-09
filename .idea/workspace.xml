@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b7fb9d2d-1b2b-44dd-bb57-f1ceab9095ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCS.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604910301802</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="UCS">
+      <created>1604910618067</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604910618067</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -192,10 +199,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="136" width="572" height="760" key="#graph/0.0.1920.1040@0.0.1920.1040" timestamp="1604872581044" />
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1604910301669">
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1604910617991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604910301669" />
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604910617991" />
     <state x="855" y="370" width="281" height="207" key="Github.ShareDialog" timestamp="1604791834792">
       <screen x="72" y="27" width="1848" height="887" />
     </state>
