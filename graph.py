@@ -50,6 +50,7 @@ class GraphFactory(object):
 
 class Graph:
     def __init__(self, start_loc, goal_loc, size, costs, algorithm):
+        self.size = size
         col = 0
         row = 0
         self.nodes = []
@@ -124,6 +125,7 @@ class Node:
         self.location = location
         self.cost = cost
         self.neighbors = []
+        self.g = 0
 
     def add_neighbor(self, node):
         self.neighbors.append(node)
