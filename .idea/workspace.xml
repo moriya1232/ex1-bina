@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fb9d2d-1b2b-44dd-bb57-f1ceab9095ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UCS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UCS.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604882399721</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="UCS">
+      <created>1604910301802</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604910301802</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -173,7 +180,8 @@
     <MESSAGE value="insert main.py to project" />
     <MESSAGE value="IDS" />
     <MESSAGE value="IDS - fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="IDS - fix" />
+    <MESSAGE value="UCS" />
+    <option name="LAST_COMMIT_MESSAGE" value="UCS" />
   </component>
   <component name="WindowStateProjectService">
     <state x="162" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604877964137">
@@ -184,10 +192,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="136" width="572" height="760" key="#graph/0.0.1920.1040@0.0.1920.1040" timestamp="1604872581044" />
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1604882399657">
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1604910301669">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604882399657" />
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604910301669" />
     <state x="855" y="370" width="281" height="207" key="Github.ShareDialog" timestamp="1604791834792">
       <screen x="72" y="27" width="1848" height="887" />
     </state>

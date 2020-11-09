@@ -42,3 +42,4 @@ def ucs(graph):
                     cur_cumulative_cost = cumulative_cost + neighbor.cost
                     temp_path = path + [neighbor]
                     q.put((cur_cumulative_cost, neighbor, temp_path))
+    return None
