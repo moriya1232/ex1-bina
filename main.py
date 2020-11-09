@@ -2,11 +2,12 @@ from graph import *
 from IDS import *
 from UCS import *
 from A_star import *
+from IDA_star import *
 
 def main():
     file = open("input5.txt", "r")
     graph = GraphFactory().create_graph(file)
-    res = a_star(graph)
+    res = ida_star(graph)
     if res is not None:
         for node in res:
             print(node.location)
