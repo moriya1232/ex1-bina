@@ -14,29 +14,26 @@ def ids(graph):
 
 
 def dfs(graph, depth = float('inf')):
+    res = []
     if depth <= 0:
         return None
     for neighbor in graph.start.neighbors:
-        visited = [graph.start]
         path = [graph.start]
         if neighbor not in path:
-            path.append(neighbor)
-            depth -= 1
-            res = recursive_dfs(graph, neighbor, depth, visited, path)
+            res = recursive_dfs(graph, neighbor, depth - 1, path + [neighbor])
             if res is not None:
                 break
     return res
 
 
-def recursive_dfs(graph, node, depth, visited=[], path=[]):
+def recursive_dfs(graph, node, depth, path=[]):
     if node.location == graph.goal.location:
         return path
     if depth <= 0:
         return None
-    if node not in visited:
-        visited.append(node)
-        for neighbor in node.neighbors:
-            if neighbor not in path:
-                path.append(neighbor)
-                depth -= 1
-                return recursive_dfs(graph, neighbor, depth, visited, path)
+    for neighbor in node.neighbors:
+        if neighbor not in path:
+            res = recursive_dfs(graph, neighbor, depth - 1, path+[neighbor])
+            if res is not None:
+                return res
+    return None
