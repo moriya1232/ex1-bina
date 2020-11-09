@@ -74,7 +74,7 @@ class Graph:
         down_n = location + size
         right_n = location + 1
         left_n = location - 1
-        source_neighbors = [up_n - 1, up_n, up_n + 1, right_n, left_n, down_n - 1, down_n, down_n + 1]
+        source_neighbors = [down_n - 1, down_n, down_n + 1, right_n, up_n - 1, up_n, up_n + 1, left_n]
         up = [up_n - 1, up_n, up_n + 1]
         down = [down_n - 1, down_n, down_n + 1]
         left = [up_n - 1, left_n, down_n - 1]
@@ -115,7 +115,8 @@ class Graph:
                     source_neighbors.remove(r)
         # create neighbors
         for n in source_neighbors:
-            node.add_neighbor(nodes[n])
+            if nodes[n].cost != -1:
+                node.add_neighbor(nodes[n])
 
 
 class Node:

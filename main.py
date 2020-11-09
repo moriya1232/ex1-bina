@@ -1,10 +1,17 @@
+from graph import *
+from IDS import *
+
 def main():
     file = open("input4.txt", "r")
     graph = GraphFactory().create_graph(file)
 
-    print(graph.start.location)
-    print(graph.goal.location)
 
+    res = ids(graph)
+    if res is not None:
+        for node in res:
+            print(node.location)
+    else:
+        print("No Solution")
 
 
 if __name__ == "__main__":
