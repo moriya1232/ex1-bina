@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fb9d2d-1b2b-44dd-bb57-f1ceab9095ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Huristic_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IDA_star.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDS.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/A_star.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604915747389</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="a_star + fix IDS">
+      <created>1604918881768</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1604918881768</updated>
+    </task>
+    <task id="LOCAL-00015" summary="input5">
+      <created>1604918899858</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1604918899858</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -204,41 +220,47 @@
     <MESSAGE value="UCS" />
     <MESSAGE value="arrange vertexes in graph" />
     <MESSAGE value="a_star" />
-    <option name="LAST_COMMIT_MESSAGE" value="a_star" />
+    <MESSAGE value="a_star + fix IDS" />
+    <MESSAGE value="input5" />
+    <option name="LAST_COMMIT_MESSAGE" value="input5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="162" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604877964137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="162" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604877964137" />
+    <state x="439" y="297" width="509" height="383" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604919221853">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="439" y="297" width="509" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604919221853" />
     <state x="669" y="136" width="572" height="760" key="#graph" timestamp="1604872581044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="136" width="572" height="760" key="#graph/0.0.1920.1040@0.0.1920.1040" timestamp="1604872581044" />
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1604918881701">
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1604918899796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604918881701" />
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604918899796" />
     <state x="855" y="370" width="281" height="207" key="Github.ShareDialog" timestamp="1604791834792">
       <screen x="72" y="27" width="1848" height="887" />
     </state>
     <state x="855" y="370" width="281" height="207" key="Github.ShareDialog/72.27.1848.887@72.27.1848.887" timestamp="1604791834792" />
-    <state width="1369" height="276" key="GridCell.Tab.0.bottom" timestamp="1604918858578">
+    <state width="1899" height="276" key="GridCell.Tab.0.bottom" timestamp="1604919455654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1369" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604918858578" />
-    <state width="1369" height="276" key="GridCell.Tab.0.center" timestamp="1604918858576">
+    <state width="1899" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604919455654" />
+    <state width="1899" height="276" key="GridCell.Tab.0.center" timestamp="1604919455653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1369" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604918858576" />
-    <state width="1369" height="276" key="GridCell.Tab.0.left" timestamp="1604918858575">
+    <state width="1899" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604919455653" />
+    <state width="1899" height="276" key="GridCell.Tab.0.left" timestamp="1604919455652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1369" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604918858575" />
-    <state width="1369" height="276" key="GridCell.Tab.0.right" timestamp="1604918858577">
+    <state width="1899" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604919455652" />
+    <state width="1899" height="276" key="GridCell.Tab.0.right" timestamp="1604919455653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1369" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604918858577" />
+    <state width="1899" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604919455653" />
     <state width="1369" height="317" key="GridCell.Tab.1.bottom" timestamp="1604918265730">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -4,9 +4,9 @@ from UCS import *
 from A_star import *
 
 def main():
-    file = open("input4.txt", "r")
+    file = open("input5.txt", "r")
     graph = GraphFactory().create_graph(file)
-    res = ids(graph)
+    res = a_star(graph)
     if res is not None:
         for node in res:
             print(node.location)
