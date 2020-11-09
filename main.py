@@ -1,12 +1,11 @@
 from graph import *
 from IDS import *
+from UCS import *
 
 def main():
-    file = open("input4.txt", "r")
+    file = open("input2.txt", "r")
     graph = GraphFactory().create_graph(file)
-
-
-    res = ids(graph)
+    res = ucs(graph)
     if res is not None:
         for node in res:
             print(node.location)
