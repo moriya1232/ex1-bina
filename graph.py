@@ -48,11 +48,10 @@ class GraphFactory(object):
         return Graph(start, goal, size, costs, algo)
 
 
-def write_solution(solution_nodes):
+def write_solution(solution_nodes, num_nodes):
     if solution_nodes is None:
         print("no path")
         return
-    num_nodes = len(solution_nodes)
     cost = 0
     solution_str = ""
     for i in solution_nodes:

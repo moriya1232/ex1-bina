@@ -5,10 +5,10 @@ from A_star import *
 from IDA_star import *
 
 def main():
-    file = open("input.txt", "r")
+    file = open("input3.txt", "r")
     graph = GraphFactory().create_graph(file)
-    res = find_solution(graph)
-    write_solution(res)
+    res, num_nodes = find_solution(graph)
+    write_solution(res, num_nodes)
 
 
 def find_solution(graph):
