@@ -17,10 +17,11 @@ def dfs(graph, depth = float('inf')):
     res = []
     if depth <= 0:
         return None
-    for neighbor in graph.start.neighbors:
-        path = [graph.start]
+    for neighbor1 in graph.start.neighbors:
+        neighbor = neighbor1[0]
+        path = [[graph.start, ""]]
         if neighbor not in path:
-            res = recursive_dfs(graph, neighbor, depth - 1, path + [neighbor])
+            res = recursive_dfs(graph, neighbor, depth - 1, path + [neighbor1])
             if res is not None:
                 break
     return res
@@ -31,9 +32,10 @@ def recursive_dfs(graph, node, depth, path=[]):
         return path
     if depth <= 0:
         return None
-    for neighbor in node.neighbors:
+    for neighbor1 in node.neighbors:
+        neighbor = neighbor1[0]
         if neighbor not in path:
-            res = recursive_dfs(graph, neighbor, depth - 1, path+[neighbor])
+            res = recursive_dfs(graph, neighbor, depth - 1, path+[neighbor1])
             if res is not None:
                 return res
     return None

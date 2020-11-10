@@ -4,7 +4,7 @@ def ucs(graph):
     visited = []
     q = PriorityQueue()
     start = graph.start
-    q.put((start.cost, start, [start]))
+    q.put((start.cost, start, [[start, ""]]))
 
     while not q.is_empty():
         cumulative_cost, node, path = q.get()
@@ -13,9 +13,10 @@ def ucs(graph):
         if node == graph.goal:
             return path
         else:
-            for neighbor in node.neighbors:
+            for neighbor1 in node.neighbors:
+                neighbor = neighbor1[0]
                 if neighbor not in visited:
                     cur_cumulative_cost = cumulative_cost + neighbor.cost
-                    temp_path = path + [neighbor]
+                    temp_path = path + [neighbor1]
                     q.put((cur_cumulative_cost, neighbor, temp_path))
     return None

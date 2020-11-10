@@ -3,7 +3,7 @@ from Huristic_functions import *
 
 def ida_star(graph):
     threshold = h_distance(graph, graph.start)
-    path = [graph.start]
+    path = [[graph.start, ""]]
     graph.start.g = graph.start.cost
     while True:
         path, is_done = search(graph, threshold, graph.start, path, graph.start.cost)
@@ -20,8 +20,9 @@ def search(graph, threshold, node, path, cost):
     if node == graph.goal:
         return path, True
     # min_f = float('inf')
-    for neighbor in node.neighbors:
-        res_path, res_found = search(graph, threshold, neighbor, path + [neighbor], cost+neighbor.cost)
+    for neighbor1 in node.neighbors:
+        neighbor = neighbor1[0]
+        res_path, res_found = search(graph, threshold, neighbor, path + [neighbor1], cost+neighbor.cost)
         if res_found:
             return res_path, True
     return path, False

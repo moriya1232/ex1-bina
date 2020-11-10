@@ -48,6 +48,21 @@ class GraphFactory(object):
         return Graph(start, goal, size, costs, algo)
 
 
+def write_solution(solution_nodes):
+    if solution_nodes is None:
+        print("no path")
+        return
+    num_nodes = len(solution_nodes)
+    cost = 0
+    solution_str = ""
+    for i in solution_nodes:
+        cost += i[0].cost
+        solution_str += i[1]
+        solution_str += " "
+    print(solution_str + str(cost) + " " + str(num_nodes))
+
+
+
 class Graph:
     def __init__(self, start_loc, goal_loc, size, costs, algorithm):
         self.size = size
@@ -75,11 +90,12 @@ class Graph:
         down_n = location + size
         right_n = location + 1
         left_n = location - 1
-        source_neighbors = [right_n, down_n + 1, down_n, down_n - 1, left_n, up_n - 1, up_n, up_n + 1]
-        up = [up_n - 1, up_n, up_n + 1]
-        down = [down_n - 1, down_n, down_n + 1]
-        left = [up_n - 1, left_n, down_n - 1]
-        right = [up_n + 1, right_n, down_n + 1]
+        source_neighbors = [[right_n, "R"], [down_n + 1, "RD"], [down_n,"D"], [down_n - 1,"LD"], [left_n, "L"],
+                            [up_n - 1,"LU"], [up_n,"U"], [up_n + 1,"RU"]]
+        up = [[up_n - 1,"LU"], [up_n,"U"], [up_n + 1,"RU"]]
+        down = [[down_n + 1, "RD"], [down_n,"D"], [down_n - 1,"LD"]]
+        left = [[down_n - 1,"LD"], [left_n, "L"],[up_n - 1,"LU"]]
+        right = [[right_n, "R"], [down_n + 1, "RD"], [up_n + 1,"RU"]]
 
         # first column
         if location % size == 0:
@@ -91,33 +107,33 @@ class Graph:
                 source_neighbors.remove(r)
         temp_neighbors = source_neighbors.copy()
         for n in temp_neighbors:
-            if n < 0 or n >= size * size:
+            if n[0] < 0 or n[0] >= size * size:
                 source_neighbors.remove(n)
 
         # check if up is -1
-        if up_n in source_neighbors and nodes[up_n].cost == -1:
+        if [up_n - 1,"LU"] in source_neighbors and nodes[up_n].cost == -1:
             for u in up:
                 if u in source_neighbors:
                     source_neighbors.remove(u)
         # check if down is -1
-        if down_n in source_neighbors and nodes[down_n].cost == -1:
+        if [down_n,"D"] in source_neighbors and nodes[down_n].cost == -1:
             for d in down:
                 if d in source_neighbors:
                     source_neighbors.remove(d)
         # check if left is -1
-        if left_n in source_neighbors and nodes[left_n].cost == -1:
+        if [left_n, "L"] in source_neighbors and nodes[left_n].cost == -1:
             for l in left:
                 if l in source_neighbors:
                     source_neighbors.remove(l)
         # check if right is -1
-        if right_n in source_neighbors and nodes[right_n].cost == -1:
+        if [right_n, "R"] in source_neighbors and nodes[right_n].cost == -1:
             for r in right:
                 if r in source_neighbors:
                     source_neighbors.remove(r)
         # create neighbors
         for n in source_neighbors:
-            if nodes[n].cost != -1:
-                node.add_neighbor(nodes[n])
+            if nodes[n[0]].cost != -1:
+                node.add_neighbor(nodes[n[0]], n[1])
 
 
 class Node:
@@ -127,8 +143,5 @@ class Node:
         self.neighbors = []
         self.g = 0
 
-    def add_neighbor(self, node):
-        self.neighbors.append(node)
-
-
-
+    def add_neighbor(self, node, string_solution):
+        self.neighbors.append([node, string_solution])
