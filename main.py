@@ -4,14 +4,17 @@ from UCS import *
 from A_star import *
 from IDA_star import *
 
+
 def main():
-    file = open("input3.txt", "r")
+    file = open("input2.txt", "r")
     graph = GraphFactory().create_graph(file)
     res, num_nodes = find_solution(graph)
     write_solution(res, num_nodes)
 
 
 def find_solution(graph):
+    if (graph.start == graph.goal):
+        return [graph.start, ""], 0
     if graph.algorithm == "IDS":
         return ids(graph)
     elif graph.algorithm == "UCS":
@@ -21,8 +24,8 @@ def find_solution(graph):
     elif graph.algorithm == "IDA*":
         return ida_star(graph)
     else:
-        return None
+        return None, None
+
 
 if __name__ == "__main__":
     main()
-

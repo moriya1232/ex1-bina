@@ -58,7 +58,8 @@ def write_solution(solution_nodes, num_nodes):
         cost += i[0].cost
         solution_str += i[1]
         solution_str += " "
-    print(solution_str + str(cost) + " " + str(num_nodes))
+    cost_start_node = solution_nodes[0][0].cost
+    print(solution_str + str(cost - cost_start_node) + " " + str(num_nodes))
 
 
 
