@@ -13,11 +13,12 @@ def a_star(graph):
         if node == graph.goal:
             return path, num_nodes
         closed.append(node)
-        for neighbor in node.neighbors:
+        for neighbor1 in node.neighbors:
+            neighbor = neighbor1[0]
             if neighbor not in closed:
-                neighbor[0].g = node.g + neighbor[0].cost
-                f_neighbor = neighbor[0].g + h_distance(graph, neighbor[0])
-                path_neighbor = path + [neighbor]
+                neighbor.g = node.g + neighbor.cost
+                f_neighbor = neighbor.g + h_distance(graph, neighbor)
+                path_neighbor = path + [neighbor1]
                 num_nodes += 1
-                q.put((f_neighbor, neighbor[0], path_neighbor))
+                q.put((f_neighbor, neighbor, path_neighbor))
     return None

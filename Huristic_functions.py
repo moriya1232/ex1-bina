@@ -10,4 +10,4 @@ def h_distance(graph, node):
     col_cur = loc_cur % graph.size
     row_gap = abs(row_goal - row_cur)
     col_gap = abs(col_goal - col_cur)
-    return math.ceil((row_gap + col_gap)/2)
+    return math.ceil(row_gap + col_gap)
