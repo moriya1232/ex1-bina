@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b7fb9d2d-1b2b-44dd-bb57-f1ceab9095ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/A_star.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Huristic_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Huristic_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDA_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDA_star.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDS.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.ex1">
+    <configuration name="ex1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ex1-bina" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ex1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ex1-bina" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -56,34 +77,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ex1-bina" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.graph" />
-      <item itemvalue="Python.main" />
+      <item itemvalue="Python.ex1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.ex1" />
         <item itemvalue="Python.graph" />
       </list>
     </recent_temporary>
@@ -247,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605394069879</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="ida* - add min threshold, &#10;change huristic function&#10;and fix a*">
+      <created>1605396759634</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1605396759634</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -270,7 +277,8 @@
     <MESSAGE value="fix nodes in ids" />
     <MESSAGE value="add outputs and ex1.pdf" />
     <MESSAGE value="ucs- num_nodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ucs- num_nodes" />
+    <MESSAGE value="ida* - add min threshold, &#10;change huristic function&#10;and fix a*" />
+    <option name="LAST_COMMIT_MESSAGE" value="ida* - add min threshold, &#10;change huristic function&#10;and fix a*" />
   </component>
   <component name="WindowStateProjectService">
     <state x="162" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604877964137">
@@ -285,62 +293,66 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="136" width="572" height="760" key="#graph/0.0.1920.1040@0.0.1920.1040" timestamp="1604872581044" />
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1605396741249">
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1605396759546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605396741249" />
-    <state x="743" y="277" width="424" height="479" key="FileChooserDialogImpl" timestamp="1605056133917">
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605396759546" />
+    <state x="743" y="277" width="424" height="479" key="FileChooserDialogImpl" timestamp="1605694880138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="743" y="277" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605056133917" />
+    <state x="743" y="277" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605694880138" />
     <state x="855" y="370" width="281" height="207" key="Github.ShareDialog" timestamp="1604791834792">
       <screen x="72" y="27" width="1848" height="887" />
     </state>
     <state x="855" y="370" width="281" height="207" key="Github.ShareDialog/72.27.1848.887@72.27.1848.887" timestamp="1604791834792" />
-    <state width="1899" height="296" key="GridCell.Tab.0.bottom" timestamp="1605396615582">
+    <state width="1588" height="272" key="GridCell.Tab.0.bottom" timestamp="1606004208261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605396615582" />
-    <state width="1899" height="296" key="GridCell.Tab.0.center" timestamp="1605396615581">
+    <state width="1588" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606004208261" />
+    <state width="1588" height="272" key="GridCell.Tab.0.center" timestamp="1606004208261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="296" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605396615581" />
-    <state width="1899" height="296" key="GridCell.Tab.0.left" timestamp="1605396615581">
+    <state width="1588" height="272" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606004208261" />
+    <state width="1588" height="272" key="GridCell.Tab.0.left" timestamp="1606004208261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="296" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605396615581" />
-    <state width="1899" height="296" key="GridCell.Tab.0.right" timestamp="1605396615582">
+    <state width="1588" height="272" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606004208261" />
+    <state width="1588" height="272" key="GridCell.Tab.0.right" timestamp="1606004208261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="296" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605396615582" />
-    <state width="1899" height="340" key="GridCell.Tab.1.bottom" timestamp="1605395938500">
+    <state width="1588" height="272" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606004208261" />
+    <state width="1899" height="340" key="GridCell.Tab.1.bottom" timestamp="1605396999599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605395938500" />
-    <state width="1899" height="340" key="GridCell.Tab.1.center" timestamp="1605395938499">
+    <state width="1899" height="340" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605396999599" />
+    <state width="1899" height="340" key="GridCell.Tab.1.center" timestamp="1605396999598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605395938499" />
-    <state width="1899" height="340" key="GridCell.Tab.1.left" timestamp="1605395938499">
+    <state width="1899" height="340" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605396999598" />
+    <state width="1899" height="340" key="GridCell.Tab.1.left" timestamp="1605396999598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605395938499" />
-    <state width="1899" height="340" key="GridCell.Tab.1.right" timestamp="1605395938499">
+    <state width="1899" height="340" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605396999598" />
+    <state width="1899" height="340" key="GridCell.Tab.1.right" timestamp="1605396999598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="340" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605395938499" />
+    <state width="1899" height="340" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605396999598" />
     <state x="464" y="154" key="SettingsEditor" timestamp="1604907751280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="464" y="154" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604907751280" />
-    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1605392167093">
+    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1605400064331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605392167093" />
-    <state x="387" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1605391959036">
+    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605400064331" />
+    <state x="387" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1605694843508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="387" y="321" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605391959036" />
+    <state x="387" y="321" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605694843508" />
+    <state x="668" y="313" width="574" height="406" key="git4idea.merge.GitPullDialog" timestamp="1605694853665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="313" width="574" height="406" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605694853665" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

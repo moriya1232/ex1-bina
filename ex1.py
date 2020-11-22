@@ -6,7 +6,7 @@ from IDA_star import *
 
 
 def main():
-    file = open("input2.txt", "r")
+    file = open("input4.txt", "r")
     graph = GraphFactory().create_graph(file)
     res, num_nodes = find_solution(graph)
     write_solution(res, num_nodes)
@@ -19,9 +19,9 @@ def find_solution(graph):
         return ids(graph)
     elif graph.algorithm == "UCS":
         return ucs(graph)
-    elif graph.algorithm == "A*":
+    elif graph.algorithm == "ASTAR":
         return a_star(graph)
-    elif graph.algorithm == "IDA*":
+    elif graph.algorithm == "IDASTAR":
         return ida_star(graph)
     else:
         return None, None

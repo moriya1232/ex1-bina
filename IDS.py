@@ -9,7 +9,7 @@ def ids(graph):
     global num_nodes
     i = 1
     prev = 0
-    while True:
+    while i <= 20:
         this_iteration_nodes = [graph.start]
         num_nodes += 1
         res = dfs(graph, i)

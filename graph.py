@@ -40,7 +40,7 @@ class GraphFactory(object):
             else:
                 str_loc = line.split(",")
                 for l in str_loc:
-                    costs.append(int(l))
+                    costs.append(int(l.strip(" \n\t")))
 
             num_line += 1
         start = size * row_start + col_start
@@ -57,9 +57,10 @@ def write_solution(solution_nodes, num_nodes):
     for i in solution_nodes:
         cost += i[0].cost
         solution_str += i[1]
-        solution_str += " "
+        solution_str += "-"
+    solution_str = solution_str[1:-1]
     cost_start_node = solution_nodes[0][0].cost
-    print(solution_str + str(cost - cost_start_node) + " " + str(num_nodes))
+    print(solution_str + " " + str(cost - cost_start_node) + " " + str(num_nodes))
 
 
 
