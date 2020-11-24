@@ -1,10 +1,9 @@
 # moriya leopold
 
-# TODO: check if ids need to run for ever if there is no solution or stup when it pass over all the nodes
 num_nodes = 0
 this_iteration_nodes = []
 
-def ids(graph):
+def ids(graph):     # IDS algorithm
     global this_iteration_nodes
     global num_nodes
     i = 1
@@ -17,12 +16,11 @@ def ids(graph):
             return None, None
         if res is not None:
             return res, num_nodes
-
         i += 1
         prev = len(this_iteration_nodes)
 
 
-def dfs(graph, depth=float('inf')):
+def dfs(graph, depth=float('inf')):       # IDS use DFS algorithm
     global num_nodes
     global this_iteration_nodes
     res = []
@@ -40,7 +38,7 @@ def dfs(graph, depth=float('inf')):
     return res
 
 
-def recursive_dfs(graph, node, depth, path=[]):
+def recursive_dfs(graph, node, depth, path=[]):      # DFS is recursive algorithm so the previous algorithm use it.
     global this_iteration_nodes
     global num_nodes
     if node.location == graph.goal.location:

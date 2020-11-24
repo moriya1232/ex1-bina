@@ -6,13 +6,18 @@ from IDA_star import *
 
 
 def main():
-    file = open("input4.txt", "r")
+    # open the file
+    file = open("input6.txt", "r")
+    # create the graph by graph_factory
     graph = GraphFactory().create_graph(file)
+    # find the solution
     res, num_nodes = find_solution(graph)
+    # write the solution
     write_solution(res, num_nodes)
 
 
 def find_solution(graph):
+    # check which algorithm to use.
     if (graph.start == graph.goal):
         return [graph.start, ""], 0
     if graph.algorithm == "IDS":

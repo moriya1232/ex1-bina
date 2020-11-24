@@ -14,6 +14,7 @@ class TextCares(object):
 class GraphFactory(object):
     @staticmethod
     def create_graph(file):
+        # graph factory need to be can create graph.
         algo = ""
         row_start = 0
         col_start = 0
@@ -25,19 +26,19 @@ class GraphFactory(object):
         lines = TextCares.remove_enters(lines)
         num_line = 0
         for line in lines:
-            if num_line == 0:
+            if num_line == 0:    # first line = algorithm
                 algo = line
-            elif num_line == 1:
+            elif num_line == 1:        # second line = start node
                 str_loc = line.split(",")
                 row_start = int(str_loc[0])
                 col_start = int(str_loc[1])
-            elif num_line == 2:
+            elif num_line == 2:           # third line = goal node
                 str_loc = line.split(",")
                 row_goal = int(str_loc[0])
                 col_goal = int(str_loc[1])
-            elif num_line == 3:
+            elif num_line == 3:          # forth line = size of the matrix
                 size = int(line)
-            else:
+            else:                       # all the lines that left = the matrix of the problem
                 str_loc = line.split(",")
                 for l in str_loc:
                     costs.append(int(l.strip(" \n\t")))
@@ -45,10 +46,10 @@ class GraphFactory(object):
             num_line += 1
         start = size * row_start + col_start
         goal = size * row_goal + col_goal
-        return Graph(start, goal, size, costs, algo)
+        return Graph(start, goal, size, costs, algo)       # create the graph and return it
 
 
-def write_solution(solution_nodes, num_nodes):
+def write_solution(solution_nodes, num_nodes):       # write the solution by the format that we asked for.
     if solution_nodes is None:
         print("no path")
         return
@@ -64,7 +65,7 @@ def write_solution(solution_nodes, num_nodes):
 
 
 
-class Graph:
+class Graph:             # can called problem too.
     def __init__(self, start_loc, goal_loc, size, costs, algorithm):
         self.size = size
         col = 0
@@ -85,7 +86,7 @@ class Graph:
         self.algorithm = algorithm
 
     @staticmethod
-    def add_neighbors(node, size, nodes):
+    def add_neighbors(node, size, nodes):        # add the neighbors to any node
         location = node.location
         up_n = location - size
         down_n = location + size

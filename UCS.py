@@ -1,7 +1,7 @@
 from PriorityQueue import *
 
 
-def ucs(graph):
+def ucs(graph):          # UCS algorithm
     q = PriorityQueue()
     start = graph.start
     visited = [start]

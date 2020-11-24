@@ -1,7 +1,7 @@
 import math
 
 
-def h_distance(graph, node):
+def h_distance(graph, node):              # this is Manheten's distance
     loc_goal = graph.goal.location
     row_goal = math.floor(loc_goal / graph.size)
     col_goal = loc_goal % graph.size

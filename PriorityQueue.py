@@ -1,4 +1,4 @@
-class PriorityQueue(object):
+class PriorityQueue(object):     # priority queue, this diffrent a little form the regular priority queue
     def __init__(self):
         self.queue = []
 
