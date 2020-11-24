@@ -7,13 +7,18 @@ from IDA_star import *
 
 def main():
     # open the file
-    file = open("input6.txt", "r")
+    file = open("input.txt", "r")
     # create the graph by graph_factory
     graph = GraphFactory().create_graph(file)
     # find the solution
     res, num_nodes = find_solution(graph)
+    output_file = open("output.txt", "w+")
     # write the solution
-    write_solution(res, num_nodes)
+    output_file.write(write_solution(res, num_nodes))
+
+    # close the files
+    file.close()
+    output_file.close()
 
 
 def find_solution(graph):

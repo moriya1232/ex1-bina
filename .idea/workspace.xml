@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b7fb9d2d-1b2b-44dd-bb57-f1ceab9095ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/A_star.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Huristic_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Huristic_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDA_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDA_star.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDS.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PriorityQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/PriorityQueue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UCS.py" beforeDir="false" afterPath="$PROJECT_DIR$/UCS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606004320281</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="comments">
+      <created>1606231637528</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1606231637528</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -291,7 +293,8 @@
     <MESSAGE value="ucs- num_nodes" />
     <MESSAGE value="ida* - add min threshold, &#10;change huristic function&#10;and fix a*" />
     <MESSAGE value="change names of algorithms, and fix write solution, and fix ids until 20 iterations" />
-    <option name="LAST_COMMIT_MESSAGE" value="change names of algorithms, and fix write solution, and fix ids until 20 iterations" />
+    <MESSAGE value="comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="162" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604877964137">
@@ -306,10 +309,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="669" y="136" width="572" height="760" key="#graph/0.0.1920.1040@0.0.1920.1040" timestamp="1604872581044" />
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1606004320125">
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2" timestamp="1606231637373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606004320125" />
+    <state x="343" y="92" width="712" height="797" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606231637373" />
     <state x="743" y="277" width="424" height="479" key="FileChooserDialogImpl" timestamp="1605694880138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -318,22 +321,22 @@
       <screen x="72" y="27" width="1848" height="887" />
     </state>
     <state x="855" y="370" width="281" height="207" key="Github.ShareDialog/72.27.1848.887@72.27.1848.887" timestamp="1604791834792" />
-    <state width="1588" height="272" key="GridCell.Tab.0.bottom" timestamp="1606004342890">
+    <state width="1899" height="295" key="GridCell.Tab.0.bottom" timestamp="1606232817942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1588" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606004342890" />
-    <state width="1588" height="272" key="GridCell.Tab.0.center" timestamp="1606004342889">
+    <state width="1899" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606232817942" />
+    <state width="1899" height="295" key="GridCell.Tab.0.center" timestamp="1606232817942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1588" height="272" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606004342889" />
-    <state width="1588" height="272" key="GridCell.Tab.0.left" timestamp="1606004342889">
+    <state width="1899" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606232817942" />
+    <state width="1899" height="295" key="GridCell.Tab.0.left" timestamp="1606232817941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1588" height="272" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606004342889" />
-    <state width="1588" height="272" key="GridCell.Tab.0.right" timestamp="1606004342890">
+    <state width="1899" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606232817941" />
+    <state width="1899" height="295" key="GridCell.Tab.0.right" timestamp="1606232817942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1588" height="272" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606004342890" />
+    <state width="1899" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606232817942" />
     <state width="1899" height="340" key="GridCell.Tab.1.bottom" timestamp="1605396999599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -354,10 +357,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="464" y="154" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604907751280" />
-    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1606004332389">
+    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1606231647849">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606004332389" />
+    <state x="299" y="229" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606231647849" />
     <state x="387" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1606229572581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
