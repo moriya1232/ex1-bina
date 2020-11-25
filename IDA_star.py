@@ -1,35 +1,40 @@
 from Huristic_functions import *
 
+num_nodes = 1
 
-def ida_star(graph):              #IDA* algorithm
+
+def ida_star(graph, function):              #IDA* algorithm
+    global num_nodes
     depth = 20
-    threshold = h_distance(graph, graph.start)
-    path = [[graph.start, ""]]
+    threshold = function(graph.start)
+    path = [graph.start]
     graph.start.g = graph.start.cost
-    num_nodes = 1      # count the nodes that evaluated
     while True:
-        t, path, is_done, num_nodes = search(graph, threshold, graph.start, path, graph.start.cost, num_nodes, depth)
+        t, path, is_done = search(graph, function, threshold, graph.start, path, graph.start.cost, depth)
         if is_done:
-            return path, num_nodes
+            return graph, num_nodes
+        if t == float('inf'):
+            return None, None
         threshold = t
-    return None
+    return None, None
 
 
-def search(graph, threshold, node, path, cost, num_nodes, depth):   # recursive algorithm od IDA*
-    min_f = float('inf')
-    f = cost + h_distance(graph, node)
+def search(graph, function, threshold, node, path, cost, depth):   # recursive algorithm od IDA*
+    global num_nodes
     if depth <= 0:
-        return f, path, False, num_nodes
-    if f > threshold:
-        return f, path, False, num_nodes
+        return float('inf'), None, True
+    min_f = float('inf')
+    f = cost + function(node)
     if node == graph.goal:
-        return f, path, True, num_nodes
-    for neighbor1 in node.neighbors:
-        neighbor = neighbor1[0]
-        num_nodes += 1
-        t, res_path, res_found, num_nodes = search(graph, threshold, neighbor, path + [neighbor1], cost+neighbor.cost, num_nodes, depth -1)
+        return f, path, True
+    if f > threshold:
+        return f, path, False
+    for neighbor in node.neighbors:
+        neighbor.father = node
+        t, res_path, res_found = search(graph, function, threshold, neighbor, path + [neighbor], cost+neighbor.cost,  depth -1)
         if res_found:
-            return min_f, res_path, True, num_nodes
+            return min_f, res_path, True
+        num_nodes += 1
         if t < min_f:
             min_f = t
-    return min_f, path, False, num_nodes
+    return min_f, path, False
