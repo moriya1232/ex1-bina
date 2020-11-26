@@ -17,8 +17,6 @@ def main():
     output_file = open("output.txt", "w+")
     # write the solution
     output_file.write(write_solution(graph, num_nodes))
-    # remove it
-    print(write_solution(graph, num_nodes))
     # close the files
     file.close()
     output_file.close()
