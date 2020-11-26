@@ -8,7 +8,7 @@ import math
 
 def main():
     # open the file
-    file = open("input3.txt", "r")
+    file = open("input.txt", "r")
     # create the graph by graph_factory
     graph = GraphFactory().create_graph(file)
     # find the solution
