@@ -1,7 +1,9 @@
-# moriya leopold
+# this is class of IDS algorithm
 
+#global variables
 num_nodes = 0
 this_iteration_nodes = []
+
 
 def ids(graph):     # IDS algorithm
     global this_iteration_nodes

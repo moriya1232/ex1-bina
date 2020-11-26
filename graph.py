@@ -11,6 +11,7 @@ class TextCares(object):
         return lines
 
 
+# this factory will get the file and will create the graph from it by create_graph mathod
 class GraphFactory(object):
     @staticmethod
     def create_graph(file):
@@ -73,6 +74,8 @@ def write_solution(graph, num_nodes):       # write the solution by the format t
     res = solution_str + " " + str(g) + " " + str(num_nodes)
     return res
 
+
+# check the step by location of the prev node and the next node
 def check_where_to_go(graph, node, next_node):
     size= graph.size
     location = node.location
@@ -114,10 +117,12 @@ class Graph:             # can called problem too.
         self.goal = self.nodes[goal_loc]
         self.algorithm = algorithm
 
+    # initialize the fathers of all the nodes in the graph
     def remove_fathers(self):
         for i in self.nodes:
             i.father = None
 
+    # initialize the depthes of all the nodes in the graph
     def remove_depthes(self):
         for i in self.nodes:
             i.depth = None
@@ -175,7 +180,7 @@ class Graph:             # can called problem too.
             if nodes[n].cost != -1:
                 node.add_neighbor(nodes[n])
 
-
+# the basic class, from need i will create a graph later
 class Node:
     def __init__(self, location, cost):
         self.location = location
@@ -185,5 +190,6 @@ class Node:
         self.father = None
         self.depth = None
 
+    # add neighbor to this node
     def add_neighbor(self, node):
         self.neighbors.append(node)

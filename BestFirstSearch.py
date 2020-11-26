@@ -1,12 +1,18 @@
 from PriorityQueue import *
 
+# best first search algoritm is set of function that work
+# in this actions, by priority queue
 
+
+# the algorithm
 def best_first_search(graph, function):
+    # priority queue
     q = PriorityQueue(function)
     start = graph.start
     closed = []
     q.put(start)
     num_nodes = 0
+    # those algorithms run until there is no nodes to evalute or it cames to the goal
     while not q.is_empty():
         node = q.get()
         if node == graph.goal:

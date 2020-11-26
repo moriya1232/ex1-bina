@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7fb9d2d-1b2b-44dd-bb57-f1ceab9095ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ex1-bina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ex1-bina.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/A_star.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestFirstSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/BestFirstSearch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IDA_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDA_star.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDS.py" beforeDir="false" afterPath="$PROJECT_DIR$/IDS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PriorityQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/PriorityQueue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/usr/bin/python3" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -94,7 +92,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -319,6 +317,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="439" y="297" width="509" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604919221853" />
+    <state x="669" y="136" width="572" height="760" key="#ex1" timestamp="1606382049125">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="136" width="572" height="760" key="#ex1/0.0.1920.1040@0.0.1920.1040" timestamp="1606382049125" />
     <state x="669" y="136" width="572" height="760" key="#graph" timestamp="1604872581044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -340,26 +342,26 @@
       <screen x="72" y="27" width="1848" height="887" />
     </state>
     <state x="855" y="370" width="281" height="207" key="Github.ShareDialog/72.27.1848.887@72.27.1848.887" timestamp="1604791834792" />
-    <state width="1259" height="112" key="GridCell.Tab.0.bottom" timestamp="1606350403564">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1899" height="222" key="GridCell.Tab.0.bottom" timestamp="1606382884904">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="112" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606350403564" />
-    <state width="1899" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606326095042" />
-    <state width="1259" height="112" key="GridCell.Tab.0.center" timestamp="1606350403562">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1899" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606382884904" />
+    <state width="1899" height="222" key="GridCell.Tab.0.center" timestamp="1606382884903">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="112" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606350403562" />
-    <state width="1899" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606326095041" />
-    <state width="1259" height="112" key="GridCell.Tab.0.left" timestamp="1606350403562">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1899" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606382884903" />
+    <state width="1899" height="222" key="GridCell.Tab.0.left" timestamp="1606382884902">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="112" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606350403562" />
-    <state width="1899" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606326095041" />
-    <state width="1259" height="112" key="GridCell.Tab.0.right" timestamp="1606350403564">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1899" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606382884902" />
+    <state width="1899" height="222" key="GridCell.Tab.0.right" timestamp="1606382884903">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="112" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606350403564" />
-    <state width="1899" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606326095041" />
+    <state width="1899" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606382884903" />
     <state width="537" height="185" key="GridCell.Tab.1.bottom" timestamp="1606349093935">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -410,47 +412,47 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/A_star.py</url>
-          <line>7</line>
+          <line>9</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/graph.py</url>
-          <line>65</line>
+          <line>66</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/graph.py</url>
-          <line>63</line>
+          <line>64</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/graph.py</url>
-          <line>59</line>
+          <line>60</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/IDS.py</url>
-          <line>52</line>
+          <line>54</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/IDS.py</url>
-          <line>50</line>
+          <line>52</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/IDS.py</url>
-          <line>42</line>
+          <line>44</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/IDS.py</url>
-          <line>33</line>
+          <line>35</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/IDA_star.py</url>
-          <line>12</line>
+          <line>13</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>

@@ -6,6 +6,7 @@ from IDA_star import *
 import math
 
 
+# main
 def main():
     # open the file
     file = open("input.txt", "r")
@@ -22,7 +23,7 @@ def main():
     file.close()
     output_file.close()
 
-
+# get the solution for the problem
 def find_solution(graph):
     def chebyshev(node):
         loc_goal = graph.goal.location

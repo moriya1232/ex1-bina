@@ -7,9 +7,10 @@ def ida_star(graph, function):              #IDA* algorithm
     global num_nodes
     depth = 20
     threshold = function(graph.start)
+    # start from the start node
     path = [graph.start]
     while True:
-
+        # recursive
         t, path, is_done = search(graph, function, threshold, graph.start, path, 0, depth)
         if is_done:
             return graph, num_nodes
